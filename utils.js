@@ -7,7 +7,7 @@ const backTrack = (node, {
   let current = node;
   // while(current)
   // {
-    for(let i = 0; i < 30; i++)
+    for(let i = 0; i < 500; i++)
     {
       current.visitedColor = "blue"
       current = current.parent
