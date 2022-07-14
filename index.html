@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathFinding</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<ul>
+  <div>
+    <label for="head">Starting Point</label>
+    <input type="color" id="sp" name="head"
+           value="#e66465">
+</div>
+
+<div>
+  <label for="body">Ending Point</label>
+    <input type="color" id="ep" name="body"
+            value="#f6b73c">
+</div>
+
+<div>
+  <label for="meh">Algorithm</label>
+    <select name="Algorithm" id="algorithm">
+      <option value="md">Manhattan Distance</option>
+      <option value="dd">Diagonal Distance</option>
+      <option value="ed">Euclid Distance</option>
+    </select>
+</div>
+
+<div>
+  <button id="drawPath">Draw A* pathFinding</button>
+</div>
+</ul>
+<script type="module" src="utils.js"></script>
+<script type="module" src="index.js"></script>
+</body>
+</html>
