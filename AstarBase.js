@@ -1,10 +1,4 @@
-// import
-// {
-//     mapWidth,
-//     mapHeight,
-// }from "./Constraint"
-let mapWidth = 30;
-let mapHeight = 25;
+
 class ANode {
   constructor(x, y) {
     this.parent = null
