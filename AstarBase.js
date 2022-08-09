@@ -1,4 +1,5 @@
-
+const height = 30;
+const width = 30;
 class ANode {
   constructor(x, y) {
     this.parent = null
@@ -37,7 +38,7 @@ class Astar {
     return path;
   }
   isOutOfBounds(x,y) {
-    if (x < 0 || x >= mapWidth || y < 0 || y >= mapHeight) return true;
+    if (x < 0 || x >= height || y < 0 || y >= width) return true;
     return false;
   }
   getNeighbors(node) {
